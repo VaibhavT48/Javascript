@@ -24,11 +24,11 @@ console.log(addTwo(7,8))
 
 // implicit return for function
 
-const addTwo = (num1, num2) => num1 + num2
+//const addTwo = (num1, num2) => num1 + num2
 
-const addTwo = (num1, num2) => (num1 + num2)
+//const addTwo = (num1, num2) => (num1 + num2)
 
-const addTwo = (num1, num2) => ({username:"vaibhav"})
+//const addTwo = (num1, num2) => ({username:"vaibhav"})
 
 
 
