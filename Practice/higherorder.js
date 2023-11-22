@@ -5,7 +5,7 @@ code.forEach(function(code){
 })
 
 
-// By using arrow finction
+// By using arrow function
 
 code.forEach((code) => {
     console.log(code);
