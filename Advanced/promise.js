@@ -10,6 +10,8 @@ const promiseOne = new Promise (function(resolve, reject) {
         console.log('promise resolved');
 })
 
+
+
 ////////////////////////////////////
 
 new Promise(function(resolve, reject) {
