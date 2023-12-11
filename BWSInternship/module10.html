@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module10</title>
+</head>
+<body>
+    <h1 class="name"></h1>
+    <button>generate Character</button>
+    <img src="" class="Character-img" alt="">
+
+    <script src="http://cdnjsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <script>
+         $(document).ready function() {
+           
+          $("button").on("click", function(){
+                const randonNumber = Math.cell(Math.random() * 88)
+                $.get('http://rawcdn.githack.com/akabab/starwars-api/0.2.1/api/id${ramdomNumber}.jason'),
+                function(data){
+                    $("h1.name").text(data['name'] )
+                    $("character-img").attr("src", data['image'])
+                
+                }
+            })
+         }
+
+    </script>
+</body>
+</html>
