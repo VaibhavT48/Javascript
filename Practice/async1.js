@@ -1,48 +1,30 @@
 
+const pr1 = new Promise((resolve,reject) => {
 
-
-async function getData(){
-  return "javascript";    //return value (promise will wrap it inside promise & returns a promise)
-}
-const data = getData();
-console.log(data);
-
-data.then(res => console.log(res));  //getting only value from promises
-
-
-// return promise
-
-
-const pro = new Promise ((resolve, reject) => {
-  resolve("promise resolved");
+  setTimeout(() => {
+    resolve("promise resolved")
+  }, 4000);
 });
 
 
+const pr2 = new Promise((resolve,reject) => {
 
-const pr1 = new Promise((resolve, reject) => {
   setTimeout(() => {
-      resolve("promise resolved");
-  },5000);
-});
-
-
-const pr2 = new Promise((resolve, reject) => {
-  setTimeout(() => {
-      resolve("promise resolved");
+    console.log("promise resolved");
   },10000);
-
 });
 
-async function handlePromise(){
+async function handlePromise() {
+
   console.log("hallo world");
 
   const val1 = await pr1;
-  console.log("Javascript1");
+  console.log(pr1);
   console.log(val1);
 
-  const val2 = await pr2;
-  console.log("javascript2");
-  console.log(val2);
+   const val2 = await pr2;
+   console.log(pr2);
+   console.log(val2);
 }
-
-handlePromise();
+ 
+ handlePromise();
