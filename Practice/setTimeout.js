@@ -1,16 +1,17 @@
-console.log("Start");
+console.log("start");
 
 setTimeout (function cb(){
-    console.log("callback");
-},4000)
+  console.log("callback");
+},4000);
 
 console.log("end");
 
+let startDate = new Date().getTime();
+let endDate = startDate;
 
-let startDate = new Date().getDate();
-let endDate = startDate
-while (endDate < new Date() + 10000) {
-    endDate = new Date().getDate();
+while(endDate < startDate + 10000){
+
+endDate = new Date().getTime();
 }
 
 console.log("while expires");
